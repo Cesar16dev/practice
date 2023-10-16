@@ -205,7 +205,6 @@
       flex-flow: column wrap;
       justify-content: space-evenly;
       align-items: center;
-      padding: 2rem;
       background-image: radial-gradient(
         hsl(360, 100%, 50%),
         hsl(315, 100%, 50%),
@@ -238,24 +237,25 @@
         #f69d3c 20%
       );
       background: repeating-radial-gradient(#e66465, #9198e5 20%);
-      background-image: repeating-radial-gradient(
-        circle at 100%,
-        #333,
-        #333 10px,
-        #eee 10px,
-        #eee 20px
-      );
       background: repeating-conic-gradient(red 0%, yellow 15%, red 33%);
       width: auto;
       height: 100vh;
     }
 
     .sec5 .cuadro {
+      margin: 0%;
+      border: none;
       outline: none;
-      background-image: url(assets/fondo-transparente.jpg);
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 5px 20px;
       object-fit: cover;
       object-position: top top;
-      backdrop-filter: grayscale(1);
+      backdrop-filter: grayscale(1) sepia(1) opacity(0.8) hue-rotate(270deg)
+        invert(0.1);
+    }
+
+    .sec5 .cuadro:hover {
+      transition: border-color 2s ease 1s;
     }
 
     .sec5 .img-mercy {
@@ -268,6 +268,10 @@
       filter: contrast(50%) drop-shadow(0 0 0.75rem crimson);
       filter: grayscale(1) contrast(0.5);
       filter: hue-rotate(-0.25turn) invert(1) contrast(50%) saturate(4);
+      mix-blend-mode: luminosity;
+      mix-blend-mode: hue;
+      mix-blend-mode: difference;
+      mix-blend-mode: hard-light;
     }
   </style>
   <body>
@@ -318,7 +322,7 @@
 
       <section class="img-png">
         <picture>
-          <img src="./assets/8624553.png" alt="gato" />
+          <img src="assets/img-gato.jpg" alt="gato" />
         </picture>
       </section>
     </div>
