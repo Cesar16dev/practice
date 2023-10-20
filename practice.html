@@ -4,278 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="practice.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+      integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
-    integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
-    rel="stylesheet"
-  />
-  <style>
-    html {
-      box-sizing: content-box;
-      font-size: 16px;
-    }
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-      margin: 0;
-    }
-    img {
-      max-width: 100%;
-      width: auto;
-    }
 
-    /************ Seccion 1 ************/
-    .sec1 {
-      background-image: linear-gradient(360deg, cyan, red);
-      background-size: 100vw 100vh;
-      background-repeat: no-repeat;
-      background-position: center center;
-      max-width: 100%;
-      width: auto;
-      height: 100vh;
-      background-attachment: fixed;
-    }
-
-    @font-face {
-      font-family: "Cascadia Code";
-      src: url("../assets/CascadiaCode.woff2") format(".woff2"),
-        url("../assets/YatraOne-Regular.ttf") format(".ttf");
-    }
-
-    .cascadia {
-      font-size: 2rem;
-      padding: 30px;
-      padding-bottom: 10px;
-      font-family: "Cascadia Code";
-    }
-    .yatra {
-      font-size: 2rem;
-      font-family: "Yatra One";
-      padding: 30px;
-      padding-bottom: 10px;
-    }
-    .raleway {
-      font-size: 2rem;
-      font-family: "Raleway", sans-serif;
-      padding: 30px;
-      padding-bottom: 10px;
-    }
-
-    .material-symbols-outlined {
-      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-      padding: 30px;
-    }
-
-    .fa-solid {
-      padding: 30px;
-    }
-
-    /************* Seccion 2 ***************/
-    .sec2 {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
-      background-image: linear-gradient(180deg, blue, red);
-      background-size: cover;
-      max-width: 100%;
-      width: auto;
-      height: 100vh;
-      background-attachment: fixed;
-    }
-    .cuadro {
-      background-color: white;
-      border: 1rem solid greenyellow;
-      outline: 1rem solid fuchsia;
-      outline-offset: 1rem;
-      display: flex;
-      height: 40rem;
-      width: 60rem;
-    }
-    .cuadro img {
-      object-fit: contain;
-      object-position: 50% 50%;
-    }
-
-    /************* Seccion 3 ***************/
-    .sec3 {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 2rem;
-      background-image: linear-gradient(0deg, fuchsia, cyan);
-      background-size: cover;
-      width: auto;
-      height: 100vh;
-      background-attachment: fixed;
-    }
-    .sec3 > * {
-      height: 10rem;
-      width: 5rem;
-      outline: none;
-      padding: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: "Cascadia Code";
-    }
-    .colores1 {
-      background-color: #f0f6;
-    }
-    .colores2 {
-      font-size: 2rem;
-      font-weight: bold;
-      color: aquamarine;
-      background-color: rgba(255, 0, 0, 0.7);
-    }
-    .colores3 {
-      background-color: hsl(330, 100%, 50%);
-    }
-    /*************** Seccion 4 ****************/
-    .sec4 {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 2rem;
-      background-image: linear-gradient(0deg, peru, aquamarine);
-      width: auto;
-      height: 100vh;
-      background-attachment: fixed;
-    }
-
-    .sec4 .cuadro {
-      display: flex;
-      outline: none;
-      border: 0.5rem solid slateblue;
-      box-shadow: -2rem 2rem 1.5rem 2rem rgba(0, 0, 0, 0.7);
-      border-radius: 1rem 2rem;
-    }
-    .sec4 .cuadro img {
-      filter: brightness(0.7);
-    }
-    .texto-mercy {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      height: 20rem;
-      width: 20rem;
-      font-size: 4rem;
-      font-family: sans-serif;
-      border-radius: 1rem 2rem;
-      border: 0.5rem solid slateblue;
-      text-shadow: 0.3rem 0.3rem 0.3rem red;
-    }
-    .img-png {
-      display: flex;
-      background-color: #fff;
-      height: 30rem;
-      width: 20rem;
-    }
-    .img-png picture img {
-      filter: drop-shadow(0 0 0.75rem crimson);
-    }
-
-    /************ Seccion 5 **************/
-    .sec5 {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      background-image: radial-gradient(
-        hsl(360, 100%, 50%),
-        hsl(315, 100%, 50%),
-        hsl(270, 100%, 50%)
-      );
-      background-image: linear-gradient(
-        to right,
-        red 0% 30%,
-        white 30% 70%,
-        red 70% 100%
-      );
-      background-image: conic-gradient(
-        red 6deg,
-        orange 6deg 18deg,
-        yellow 18deg 45deg,
-        green 45deg 110deg,
-        blue 110deg 200deg,
-        purple 200deg
-      );
-      background-image: repeating-linear-gradient(
-        90deg,
-        red 0% 10%,
-        yellow 10% 20%,
-        blue 20% 30%
-      );
-      background-image: repeating-linear-gradient(
-        45deg,
-        #3f87a6,
-        #ebf8e1 15%,
-        #f69d3c 20%
-      );
-      background: repeating-radial-gradient(#e66465, #9198e5 20%);
-      background: repeating-conic-gradient(red 0%, yellow 15%, red 33%);
-      width: auto;
-      height: 100vh;
-    }
-
-    .sec5 .cuadro {
-      margin: 0%;
-      border: none;
-      outline: none;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: 5px 20px;
-      object-fit: cover;
-      object-position: top top;
-      backdrop-filter: grayscale(1) sepia(1) opacity(0.8) hue-rotate(270deg)
-        invert(0.1);
-    }
-
-    .sec5 .cuadro:hover {
-      transition: border-color 2s ease 1s;
-    }
-
-    .sec5 .img-mercy {
-      object-fit: contain;
-      outline: invert;
-      filter: blur(0.5rem);
-      filter: blur(5px);
-      filter: brightness(50%);
-      filter: brightness(0.9);
-      filter: contrast(50%) drop-shadow(0 0 0.75rem crimson);
-      filter: grayscale(1) contrast(0.5);
-      filter: hue-rotate(-0.25turn) invert(1) contrast(50%) saturate(4);
-      mix-blend-mode: luminosity;
-      mix-blend-mode: hue;
-      mix-blend-mode: difference;
-      mix-blend-mode: hard-light;
-    }
-  </style>
   <body>
     <div class="sec1">
+      <a href="scroll-one-page.html">☝️</a>
       <p class="cascadia">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
         atque sunt vel esse, nisi error vitae nobis consequuntur vero! Modi,
@@ -331,5 +89,53 @@
         <img class="img-mercy" src="assets/mercy.jpg" alt="mercy" />
       </section>
     </div>
+    <div class="sec6">
+      <p>
+        <img
+          class="hambur"
+          src="assets/img-hamburguesa.png"
+          alt="Hamburguesa"
+        />Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+        facilis, illum, quod amet ducimus pariatur blanditiis nemo dignissimos
+        accusamus ut perspiciatis provident natus saepe repudiandae repellat quo
+        explicabo nostrum vero? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Deleniti voluptatum earum voluptatibus quaerat,
+        officia aliquid nisi dolores, odio dolorem saepe, dolore cupiditate
+        aspernatur veniam. Tempora sequi delectus atque eveniet voluptates!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dignissimos
+        harum aliquam incidunt ipsum aspernatur quisquam eos at veritatis porro,
+        debitis deleniti et earum deserunt iusto vitae sequi! Sequi, eos? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Ipsam libero velit,
+        eum illum accusantium laboriosam dolorem similique a. Possimus illum
+        dicta dolores praesentium fugiat nobis debitis quaerat id asperiores ex!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        doloribus dolor necessitatibus architecto labore similique laudantium ea
+        facere in officia! Labore voluptates esse inventore cumque impedit saepe
+        rem tempora vitae. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Neque asperiores dolorem quibusdam a! Modi culpa esse porro
+        aliquid nemo accusamus vel voluptates labore officia, tempora magnam
+        deleniti, autem asperiores libero. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ex, tenetur incidunt! Error, animi
+        excepturi doloremque nemo adipisci exercitationem in voluptatibus
+        molestias quia fugit nisi autem velit beatae saepe obcaecati itaque.
+        <img class="hambur-2" src="assets/img-hamburguesa.png" alt="hambur" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugiat
+        illum, architecto tempore ea voluptas mollitia! Commodi, facilis
+        deserunt velit rem maiores pariatur eveniet unde dolore inventore
+        ducimus voluptatem provident! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Animi, obcaecati. Sapiente beatae aliquam libero
+        aliquid eos. Neque, laboriosam sunt doloribus, tempore eum illum harum
+        debitis quisquam facere a totam minus! Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Cumque, facilis quibusdam ea asperiores
+        error sunt dignissimos iusto totam illum ipsum, nisi commodi
+        necessitatibus quam quasi facere libero alias fuga tempora!
+      </p>
+    </div>
+    <div class="sec7">
+      <section class="transition">
+        <article class="cuadro-transition"></article>
+      </section>
+    </div>
+    <div class="sec8"></div>
   </body>
 </html>

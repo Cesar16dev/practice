@@ -1,0 +1,337 @@
+html {
+  box-sizing: content-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+/************ Seccion 1 ************/
+.sec1 {
+  background-image: linear-gradient(360deg, cyan, red);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../assets/CascadiaCode.woff2") format(".woff2"),
+    url("../assets/YatraOne-Regular.ttf") format(".ttf");
+}
+
+.cascadia {
+  font-size: 2rem;
+  padding: 30px;
+  padding-bottom: 10px;
+  font-family: "Cascadia Code";
+}
+.yatra {
+  font-size: 2rem;
+  font-family: "Yatra One";
+  padding: 30px;
+  padding-bottom: 10px;
+}
+.raleway {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  padding: 30px;
+}
+
+.fa-solid {
+  padding: 30px;
+}
+
+/************* Seccion 2 ***************/
+.sec2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(180deg, blue, red);
+  background-size: cover;
+  max-width: 100%;
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.cuadro {
+  background-color: white;
+  border: 1rem solid greenyellow;
+  outline: 1rem solid fuchsia;
+  outline-offset: 1rem;
+  display: flex;
+  height: 40rem;
+  width: 60rem;
+}
+.cuadro img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+/************* Seccion 3 ***************/
+.sec3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(0deg, fuchsia, cyan);
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.sec3 > * {
+  height: 10rem;
+  width: 5rem;
+  outline: none;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cascadia Code";
+}
+.colores1 {
+  background-color: #f0f6;
+}
+.colores2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: aquamarine;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+.colores3 {
+  background-color: hsl(330, 100%, 50%);
+}
+/*************** Seccion 4 ****************/
+.sec4 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(0deg, peru, aquamarine);
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.sec4 .cuadro {
+  display: flex;
+  outline: none;
+  border: 0.5rem solid slateblue;
+  box-shadow: -2rem 2rem 1.5rem 2rem rgba(0, 0, 0, 0.7);
+  border-radius: 1rem 2rem;
+}
+.sec4 .cuadro img {
+  filter: brightness(0.7);
+}
+.texto-mercy {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 20rem;
+  width: 20rem;
+  font-size: 4rem;
+  font-family: sans-serif;
+  border-radius: 1rem 2rem;
+  border: 0.5rem solid slateblue;
+  text-shadow: 0.3rem 0.3rem 0.3rem red;
+}
+.img-png {
+  display: flex;
+  background-color: #fff;
+  height: 30rem;
+  width: 20rem;
+}
+.img-png picture img {
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+/************ Seccion 5 **************/
+.sec5 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: radial-gradient(
+    hsl(360, 100%, 50%),
+    hsl(315, 100%, 50%),
+    hsl(270, 100%, 50%)
+  );
+  background-image: linear-gradient(
+    to right,
+    red 0% 30%,
+    white 30% 70%,
+    red 70% 100%
+  );
+  background-image: conic-gradient(
+    red 6deg,
+    orange 6deg 18deg,
+    yellow 18deg 45deg,
+    green 45deg 110deg,
+    blue 110deg 200deg,
+    purple 200deg
+  );
+  background-image: repeating-linear-gradient(
+    90deg,
+    red 0% 10%,
+    yellow 10% 20%,
+    blue 20% 30%
+  );
+  background-image: repeating-linear-gradient(
+    45deg,
+    #3f87a6,
+    #ebf8e1 15%,
+    #f69d3c 20%
+  );
+  background: repeating-radial-gradient(#e66465, #9198e5 20%);
+  background: repeating-conic-gradient(red 0%, yellow 15%, red 33%);
+  width: auto;
+  height: 100vh;
+}
+
+.sec5 .cuadro {
+  max-height: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px 20px;
+  object-fit: cover;
+  object-position: top top;
+  backdrop-filter: grayscale(1) sepia(1) opacity(0.8) hue-rotate(270deg)
+    invert(0.1);
+  transition: width 1s linear 0.5s;
+}
+
+.sec5 .img-mercy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  outline: invert;
+  filter: blur(0.5rem);
+  filter: blur(5px);
+  filter: brightness(50%);
+  filter: brightness(0.9);
+  filter: contrast(50%) drop-shadow(0 0 0.75rem crimson);
+  filter: grayscale(1) contrast(0.5);
+  filter: hue-rotate(-0.25turn) invert(1) contrast(50%) saturate(4);
+  mix-blend-mode: luminosity;
+  mix-blend-mode: hue;
+  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
+}
+
+.cuadro:hover {
+  width: 20em;
+}
+
+/************ Seccion 6 *************/
+
+.sec6 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(0deg, peru, aquamarine);
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.sec6 p {
+  font-size: 2rem;
+  font-family: "Cascadia Code";
+  background-color: #9198e5;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 20em;
+  width: 50em;
+}
+
+.hambur {
+  float: left;
+  shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  shape-outside: circle(40%);
+}
+.hambur-2 {
+  float: right;
+  shape-outside: circle(40%);
+}
+.sec7 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(0deg, black, aquamarine);
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.sec7 .transition {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #e66465;
+  height: 20em;
+  width: 60em;
+  transition: background-color 2s ease-out 0.5s;
+}
+.transition .cuadro-transition {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #9198e5;
+  height: 8em;
+  width: 8em;
+  transition: width 1s ease-in-out 0.5s, height 1s ease-in-out 0.5s,
+    background-color 1s ease-out 0.9s;
+}
+.cuadro-transition:hover {
+  height: 10em;
+  width: 60em;
+  background-color: white;
+}
+
+.transition:hover {
+  background-color: yellowgreen;
+}
+
+/*************** Seccion 8 ************/
+.sec8 {
+  background-image: linear-gradient(360deg, cyan, red);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+}
