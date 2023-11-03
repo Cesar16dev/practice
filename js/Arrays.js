@@ -43,3 +43,49 @@ console.log(Flat2);
 let Slice = arr.slice(1, 3);
 console.log(arr);
 console.log(Slice);
+
+// Usando metodo en el arr el some() devuelve un boolean;
+let Some = arr.some((num) => num % 3 == 0);
+let Some2 = arr.some((num) => num < 6 && num > 0);
+console.log(Some);
+console.log(Some2);
+
+// Usando en el arr el every() devuelve un boolean;
+let Every = arr.every((num) => num * 1 == num);
+console.log(arr);
+console.log(Every);
+
+// Usando en el arr el find() devuelve el valor del 1er valor que cumpla la función;
+let Find = arr.find((num) => num > 3);
+console.log(Find);
+
+// Usando en el arr el findIndex()
+let FindIndex = arr.findIndex((num) => num == 4);
+console.log(arr);
+console.log(FindIndex);
+
+// Usando en el arr el indexOf();
+let IndexOf = arr.indexOf("4");
+console.log(arr);
+console.log(IndexOf);
+
+// Usando en el arr el includes() devuelve un boolean;
+let Includes = arr.includes("3" && "5");
+console.log(Includes);
+
+// Usando en el arr el at(indice);
+let At = arr.at(4);
+console.log(At);
+
+// Usando en el arr3 el sort();
+const arr3 = ["90", "85", "60", "23"];
+let Sort3 = arr3.sort();
+console.log(Sort3);
+
+// Usando en el arr 3 el reverse();
+let Reverse = arr3.reverse();
+console.log(Reverse);
+
+// Usando en el arr3 el fill()
+let Fill = arr3.fill(8, 1);
+console.log(Fill);
