@@ -7,19 +7,49 @@ const per1 = {
 
 console.log(per1);
 
-// Creando un objeto con funcion constructora
-function Animal(nombre, apellido) {
-  this.nombre = nombre;
-  this.apellido = apellido;
+// POO
+/*
+    Clases - Modelo a seguir.
+    Objetos - Es una instancia de una clase
+      Atributos - es una característica o propiedad del objeto (son variables dentro de un objeto)
+      Métodos - son las acciones que un objeto puede realizar (son funciones dentro de un objeto)
+*/
 
+const animal = {
+  nombre: "Snoopy",
+  sonar() {
+    console.log("Hago sonidos por que estoy vivo");
+  },
+};
+
+const animal2 = {
+  nombre: "Lola Bunny",
+  sonar() {
+    console.log("Hago sonidos por que estoy vivo");
+  },
+};
+
+console.log(animal);
+console.log(animal2);
+
+//Función constructora
+function Animal(nombre, genero) {
+  //Atributos
+  this.nombre = nombre;
+  this.genero = genero;
+
+  //Métodos
   this.sonar = function () {
-    console.log("Hago sonidos");
+    console.log("Hago sonidos por que estoy vivo");
+  };
+
+  this.saludar = function () {
+    console.log(`Hola me llamo ${this.nombre}`);
   };
 }
-
-
-const snoopy = new Animal("Snoopy", "Perez");
-console.log(snoopy);
-
-const speedy = new Animal("Speedy", "Gonzales");
-console.log(speedy);
+//Función constructora donde asignamos los métodos al Prototipo, no a la función como tal
+function Animal(nombre, genero) {
+  //Atributos
+  this.nombre = nombre;
+  this.genero = genero;
+}
